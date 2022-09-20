@@ -9,10 +9,10 @@
 <body>
     <!-- 상단바 -->
     <header th:replace="layout/default/top :: topFragment"></header>
+    <nav layout:replace="layout/default/section :: sectionFragment"></nav>
 
     <!-- 본문 -->
-    <section th:replace="layout/default/section :: sectionFragment"></section>
-    <section layout:fragment="content"></section>
+    <section layout:replace="layout/default/content :: contentFragment"></section>
 
     <!-- 푸터 -->
     <footer th:replace="layout/default/footer :: footerFragment"></footer>
