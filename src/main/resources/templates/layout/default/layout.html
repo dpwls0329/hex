@@ -12,7 +12,8 @@
     <nav layout:replace="layout/default/section :: sectionFragment"></nav>
 
     <!-- 본문 -->
-    <section layout:replace="layout/default/content :: contentFragment"></section>
+    <section th:replace="layout/default/section :: sectionFragment"></section>
+    <section layout:fragment="content"></section>
 
     <!-- 푸터 -->
     <footer th:replace="layout/default/footer :: footerFragment"></footer>
